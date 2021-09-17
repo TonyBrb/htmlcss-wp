@@ -8,24 +8,39 @@
   width: 80%;
   margin-left: auto;
   margin-right: auto;
+  font-family: Montserrat;
 }
 
-
 header{
-  background-color: #E579E6;
-  height: 80px;
+  width: 100%;
+  height: 100px;
+}
+
+.logo img{
+  width: 13%;
+  border-right: 1px solid grey;
+  padding-right: 10px;
 }
 
 nav li{
   list-style: none;
-  display: inline-block;
+  float: left;
+  margin-top: 20px;
+  margin-right: 10px;
+  text-transform: uppercase;
+  
+}
+
+nav li a{
+  color: grey;
+  text-decoration: none;
 }
 
 nav li a:visited{
-  text-transform: uppercase;
-  color: white;
+   /* color: red; */
   text-decoration: none;
-}
+} 
+
 
 .clearfix::after{
   content: "";
@@ -36,24 +51,32 @@ nav li a:visited{
 main{
   margin: 20px 0 10px 0;
   min-height: 500px;
-  background-color: #0086FF;
+  /* background-color: #0086FF; */
 }
 
 .jumbotron{
-  min-height: 400px;
-  background-color: #E1D67A;
+  width: 80%;
+  min-height: 500px;
   margin-top: 20px;
   margin-bottom: 20px;
+  background-image: url(../img/banner.jpg);
+  background-color: grey;
+  background-size: cover;
+  opacity: 50%;
+  padding: 200px 374px 0px 26px;
+  border-radius: 10px;
 }
 
+
 .top{
-  background-color: #ABCFE7;
+  background-color: white;
   min-height: 45px;
 }
 
 aside, section{
   float: left;
-  margin-top: 13px;
+  margin-top: 20px;
+  margin-bottom: 13px;
   min-height: 429px;
 }
 
@@ -67,21 +90,46 @@ aside, section{
   margin-right: 2%;
 }
 
-.left{
-  background-color: #ABCFE7;
+.left div, .centre div, .right div{
+  width: 100%;
+  height: 181px;
+  background-color: grey;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 
-.right{
-  background-color: #ABCFE7;
+.left div img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 50%;
 }
 
-.centre{
-  background-color: #ABCFE7;
+.centre div img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 50%;
 }
+
+.right div img{
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  opacity: 50%;
+}
+
 
 footer{
-  background-color: #8801FE;
   height: 50px;
   margin-top: 10px;
+}
+
+footer span{
+  color: red;
+}
+
+footer div{
+  text-align: center;
 }
 
